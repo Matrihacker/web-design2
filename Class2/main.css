@@ -1,7 +1,21 @@
+body{
+    margin: 0px;
+}
 .container{
-    background-color: aliceblue;}
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 500px;
+}
 @media(min-width:758px){
         .container{
             background-color: blueviolet;
+            width: 750px;
+            margin: 0px auto;
+        }
+    }
+    @media(min-width:992px){
+        .container{
+            width: 960px;
+            background-color: plum;
         }
     }
