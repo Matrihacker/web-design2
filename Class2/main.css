@@ -1,0 +1,7 @@
+.container{
+    background-color: aliceblue;}
+@media(min-width:758px){
+        .container{
+            background-color: blueviolet;
+        }
+    }
