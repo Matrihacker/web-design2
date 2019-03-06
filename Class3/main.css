@@ -2,7 +2,7 @@ html{
     background-color: black;
     background-image: url("https://www.creativelive.com/blog/wp-content/uploads/2016/01/lights-night-unsharp-blured.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: "Avenir Next";
     height: 100%;
   
@@ -61,7 +61,9 @@ nav.navbar a {
     font-size: 32px;
     margin-left: 30px;
 }
-
+h2,h3,h4{
+    margin-left: 30px;
+}
 p{
     margin-left: 30px;
     margin-right: 30px;
