@@ -1,71 +1,30 @@
-html{
-    background-color: black;
-    background-image: url("https://www.creativelive.com/blog/wp-content/uploads/2016/01/lights-night-unsharp-blured.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Avenir Next";
-    height: 100%;
-  
-}
-body{
-    margin: 0px;
-}
-
-nav.navbar {
-    width: 100%;
-    padding: 10px 0px;
-    margin-bottom: 30px;
-    margin-top: 6px;
-}
-
-nav.navbar ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-    margin-left: 30px;
-    text-align: right;
-}
-
-nav h1{
-    position: absolute;
-    left: 30px;
-    top:30px;
-    color: black;
-    background-color: rgb(255, 230, 0);
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-nav.navbar a {
-    font-size: 22px;
-    line-height: 36px;
-    text-decoration: none;
-    color:  rgb(255, 230, 0);
-    font-weight: bold;
-    margin-right: 20px;
-    
-}
-
 .container {
-  
+    background-color: oldlace;
 }
 
-#header{
-    font-weight: bold;
-    font-size: 32px;
-    margin-left: 10px;
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightskyblue;
 }
 
 .yellow {
-    background-color: rgb(255, 230, 0);
+    background-color: lightgoldenrodyellow;
 }
 
-.black {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 230, 0);
+.cyan {
+    background-color: darkturquoise;
 }
 
-
+.purple {
+    background-color: plum;
+}
 
 .floater-section {
     float: left;
@@ -114,14 +73,7 @@ nav.navbar a {
     .med-width-100 {
         width: 100%;
     }
-    nav.navbar li {
-        display: inline-block;
-    }
-    nav h1{
-        top:0px;
-    }
 }
-
 
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px){

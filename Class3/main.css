@@ -1,50 +1,158 @@
-body {
+html{
+    background-color: black;
+    background-image: url("https://www.creativelive.com/blog/wp-content/uploads/2016/01/lights-night-unsharp-blured.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Avenir Next";
+    height: 100%;
+  
+}
+
+body{
     margin: 0px;
 }
 
-.container {
-    background-color:  rgb(255, 123, 0);
-    width: 100%;
-    min-height: 300px;
-    color: white;
-    text-align: center;
-    padding-bottom: 30px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 nav.navbar {
-    background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 10px 0px;
+    margin-bottom: 60px;
+    margin-top: 6px;
 }
+
 nav.navbar ul {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-    text-align: center;
+    margin-left: 30px;
+    text-align: right;
 }
 
-nav.navbar li:nth-child(1) {
-    border-bottom: 2px solid rgb(255, 123, 0);
+nav h1{
+    position: absolute;
+    left: 30px;
+    top:0px;
+    color: black;
+    background-color: rgb(255, 230, 0);
+    padding-right: 10px;
+    padding-left: 10px;
 }
+
 nav.navbar a {
     font-size: 22px;
     line-height: 36px;
     text-decoration: none;
-    color:  rgb(255, 123, 0);
+    color:  rgb(255, 230, 0);
+    font-weight: bold;
+    margin-right: 20px;
+    
 }
-@media(min-width: 768px){
-    .container {
-        background-color: rgb(255, 123, 0);
-        width: 750px;
-        margin: 0px auto;
-        padding-bottom: 30px;
-        padding-top: 10px;
-        margin-bottom: 100px;
+
+.container {
+  
+}
+
+#header{
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 30px;
+}
+
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+.yellow {
+    background-color: rgb(255, 230, 0);
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 230, 0);
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+    
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+   
+    nav h1{
+        top:0px;
+    }
+    #header{
+        font-size: 40px;
+    }
+    nav.navbar li{
+        display: inline-block;
         margin-top: 10px;
     }
-
-    nav.navbar li {
-        display: inline-block;
-    }
 }
 
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
