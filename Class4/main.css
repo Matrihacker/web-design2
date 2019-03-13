@@ -70,6 +70,22 @@ img{
     height: 100%;
     width: auto;
 }
+#flat{
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+}
 
 div h1,h2,h3,h4,h5,p{
     position: relative;
@@ -89,6 +105,7 @@ div h1,h2,h3,h4,h5,p{
     font-size: 32px;
     margin-left: 30px;
 }
+
 h3,h4{
     margin-left: 30px;
     margin-top: 0px;
@@ -170,6 +187,12 @@ p{
     nav.navbar li{
         display: inline-block;
         margin-top: 10px;
+    }
+    #flat{
+        float: left;
+        height: 100%;
+        width: auto;
+        margin: 10px;
     }
 }
 
