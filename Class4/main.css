@@ -70,14 +70,7 @@ img{
     height: 100%;
     width: auto;
 }
-#imgs{
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: auto;
-}
+
 div h1,h2,h3,h4,h5,p{
     position: relative;
     z-index: 5;
@@ -85,6 +78,7 @@ div h1,h2,h3,h4,h5,p{
 #headerfl{
     font-weight: bold;
     margin-left: 30px;
+    font-size: 32px;
     position: absolute;
     z-index: 1;
     top: 0px;
