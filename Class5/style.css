@@ -1,0 +1,107 @@
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: rgb(197, 197, 197);
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.cyan {
+    background-color: darkturquoise;
+}
+
+.purple {
+    background-color: plum;
+}
+
+.content {
+    position: relative;
+}
+
+#vertCenter1,
+#vertCenter2,
+#vertHorizCenter1 {
+    height: 200px;
+}
+#vertCenter2{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#vertHorizCenter2 {
+    height: 400px;
+}
+#vertCenter2 p{
+    text-align: center;
+}
+#vertCenter1 img {
+    position: absolute;
+    height: 100px; /* because we need to calculate the margin */
+    margin-top: -50px;
+    top: 50%;
+    margin-left: -50px;
+    left:50%;
+    display: block;
+}
+
+#Lorem1 {
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    display: inline-block;
+    
+}
+
+#vertHorizCenter1 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+
+    transform: translate(-50%, -70%);
+    
+    background-color: beige;
+}
+
+#vertHorizCenter2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    text-align: justify;
+}
+
+
+.container {
+    margin: auto;
+    background-color: lemonchiffon;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: hide;
+}
+
+.show {
+    display: initial;
+}
+
+.clearfix {
+    clear: both;
+}
+

@@ -1,0 +1,80 @@
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
+
+.cyan {
+    background-color: darkturquoise;
+}
+
+.purple {
+    background-color: plum;
+}
+
+.content {
+    position: relative;
+}
+
+#vertCenter1,
+#vertCenter2,
+#vertHorizCenter1 {
+    height: 200px;
+}
+
+#vertHorizCenter2 {
+    height: 400px;
+}
+
+#vertCenter1 img {
+    position: absolute;
+    height: 100px; /* because we need to calculate the margin */
+    margin-top: -50px;
+    top: 50%;
+    display: block;
+}
+
+#Lorem1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px; /* MARGINS affect the centering in this method! */
+}
+
+#vertHorizCenter1 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+
+    /* Half the width accounting for padding and border */
+    margin-left: -159px;
+    width: 258px;
+    
+    /* Half the height accounting for padding and border */
+    margin-top: -44px;
+    height: 28px;
+    
+    background-color: beige;
+}
+
+#vertHorizCenter2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0px;
+    text-align: justify;
+}
