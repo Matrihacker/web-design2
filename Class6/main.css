@@ -37,7 +37,10 @@ label{
     display: block;
 }
 
-
+p{
+    font-size: 18px;
+    font-weight: 500;
+}
 
 nav h1{
     position: absolute;
