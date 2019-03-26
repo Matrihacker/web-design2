@@ -1,0 +1,284 @@
+html{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: "Avenir Next";
+    height: 100%;
+  
+}
+
+
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu{
+    display: block;
+}
+label{
+    font-size: 37px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+    color: rgb(0, 168, 168);
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu{
+    display: block;
+}
+
+
+
+nav h1{
+    position: absolute;
+    font-size: 30px;
+    left: 30px;
+    top:0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 168, 168);
+    padding: 5px;
+    padding-right: 18px;
+    padding-left: 18px;
+    
+    
+}
+
+nav.navbar {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-bottom: 85px;
+}
+
+nav.navbar ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+nav.navbar li{
+    border-bottom: solid 1px rgb(0, 168, 168);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+nav.navbar a {
+    font-size: 22px;
+    line-height: 36px;
+    text-decoration: none;
+    color:  rgb(0, 168, 168);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+}
+#flat{
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+}
+
+div h1,h2,h3,h4,h5,p{
+    position: relative;
+    z-index: 5;
+}
+#headerfl{
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 32px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+#header{
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 30px;
+}
+
+h3,h4{
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+.yellow {
+    background-color: rgb(0, 168, 168);
+    color: white;
+}
+
+.black {
+    background-color: rgb(236, 255, 66);
+    color: rgb(0, 168, 168);
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+    
+    
+    
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+   
+    nav h1{
+        top:0px;
+    }
+    #header {
+        font-size: 40px;
+    }
+    #headerfl {
+        font-size: 40px;
+    }
+    nav.navbar li{
+        display: inline-block;
+        margin-top: 10px;
+        border: none;
+    }
+    #flat{
+        float: left;
+        height: 100%;
+        width: auto;
+        margin: 10px;
+    }
+    label{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    
+    nav.navbar {
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 60px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+    nav.navbar ul {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px;
+        margin-left: 30px;
+        margin-top: 7px;
+        text-align: right;
+        
+    }
+    nav.navbar a {
+        font-size: 22px;
+        line-height: 36px;
+        text-decoration: none;
+        color:  rgb(0, 168, 168);
+        font-weight: bold;
+        margin-right: 20px;
+        
+    }
+    
+}
+
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
