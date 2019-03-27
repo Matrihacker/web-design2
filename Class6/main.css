@@ -82,7 +82,7 @@ nav.navbar a {
     line-height: 36px;
     text-decoration: none;
     color:  rgb(0, 168, 168);
-    font-weight: bold;
+
     font-size: 20px;
 }
 
@@ -132,9 +132,8 @@ div h1,h2,h3,h4,h5,p{
     left: 0px;
 }
 #header{
-    font-size: 32px;
     margin-left: 30px;
-    font-size: 33px;
+    font-size: 35px;
 }
 #parafix{
     margin-top: -10px;
@@ -261,7 +260,7 @@ p{
         line-height: 36px;
         text-decoration: none;
         color:  rgb(0, 168, 168);
-        font-weight: bold;
+        font-weight: 600;
         margin-right: 20px;
         
     }
