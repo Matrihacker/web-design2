@@ -124,7 +124,6 @@ div h1,h2,h3,h4,h5,p{
     z-index: 5;
 }
 #headerfl{
-    font-weight: bold;
     margin-left: 30px;
     font-size: 32px;
     position: absolute;
@@ -133,9 +132,12 @@ div h1,h2,h3,h4,h5,p{
     left: 0px;
 }
 #header{
-    font-weight: bold;
     font-size: 32px;
     margin-left: 30px;
+    font-size: 33px;
+}
+#parafix{
+    margin-top: -10px;
 }
 
 h3,h4{
