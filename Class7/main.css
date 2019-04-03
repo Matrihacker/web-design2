@@ -66,7 +66,7 @@ p{
     padding-bottom: 20px;
 }
 .navfix{
-    padding: 60px;
+    padding: 0px;
 }
 nav h1{
     position: absolute;
@@ -243,8 +243,19 @@ p{
     background-size: cover;
     padding-bottom: 500px;
 }
-
-
+.bgimk{
+    background-image: url("https://www.nbm.org/wp-content/uploads/2017/02/ym_nbm_making_room_111717-5670.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
+.indemdll{
+    color: white;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
+}
 
 
 /*************SMALL SCREENS********************/
@@ -364,6 +375,9 @@ p{
     }
     .htfx{
         height:1050px;
+    }
+    .navfix{
+        padding: 30px;
     }
     
 }
