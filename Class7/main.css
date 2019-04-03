@@ -1,3 +1,10 @@
+@font-face {
+    src:url("font/AvenirNextLTPro-Bold.otf");
+    src:url("font/AvenirNextLTPro-It.otf");
+    src:url("font/AvenirNextLTPro-Regular.otf");
+
+
+}
 html{
     background-color: rgb(255, 255, 255);
     background-size: cover;
