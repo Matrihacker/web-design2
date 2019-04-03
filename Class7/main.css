@@ -225,7 +225,9 @@ p{
     transform: translate(-50%, -50%);
     
 }
-
+.htdjx{
+    height: 10px;
+}
 
 
 
@@ -347,6 +349,10 @@ p{
     p{
         font-size: 20px;
     }
+    .htfx{
+        height:1050px;
+    }
+    
 }
 
 
@@ -376,4 +382,8 @@ p{
     .hfx1{
         margin-bottom: 150px;
     }
+    .htfxx{
+        height:500px;
+    }
+    
 }
