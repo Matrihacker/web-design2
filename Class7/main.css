@@ -109,7 +109,6 @@ nav.navbar a {
     line-height: 36px;
     text-decoration: none;
     color:  rgb(0, 168, 168);
-
     font-size: 20px;
 }
 
@@ -121,10 +120,17 @@ nav.navbar a {
 .indemdl{
     color: white;
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.774);
 }
-
+.indemdli{
+    color: white;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
+}
 img{
     width: 100%;
     height: auto;
@@ -169,8 +175,11 @@ div h1,h2,h3,h4,h5,p{
 }
 .header{
     margin-left: 30px;
-    
     font-size: 33px;
+}
+.headerk{
+    margin-left: 30px;
+    font-size: 45px;
 }
 #parafix{
     margin-top: -30px;
@@ -226,10 +235,14 @@ p{
     
 }
 .htdjx{
-    height: 10px;
+    padding-bottom: -50px;
 }
 
-
+.bgim{
+    background-image: url("images/homecoming.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
 
 
 
@@ -359,7 +372,7 @@ p{
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px){
     .header {
-        font-size: 40px;
+        font-size: 30px;
     }
     .large-width-25 {
         width: 25%;
@@ -385,5 +398,5 @@ p{
     .htfxx{
         height:500px;
     }
-    
+
 }
