@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    #triggerButtonposition{
+        position: absolute;
+    }
+</style>
+<body id="mainBody">
+    <h1>Hello, World!</h1>
+
+    <button id="triggerButtoncolor" >Span</button>
+    <button id="triggerButtonposition">Span</button>
+
+    <script>
+
+        
+        var changeBackground = function(){
+            var redColor = Math.random()*255;
+            var greenColor = Math.random()*255;
+            var blueColor = Math.random()*255;
+            
+            var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+            console.log(textColor);
+
+            
+
+            //subHeader.style.color = textColor;
+            var body = document.getElementById("mainBody");
+
+            body.style.backgroundColor = textColor;
+        }
+        var changePos = function(){
+            var top = Math.random()*200+"px";
+            var left = Math.random()*200 + "px";
+
+            var pos = document.getElementById("triggerButtonposition")
+            pos.style.top=top
+            pos.style.left=left
+        }
+        var myButtonp = document.getElementById("triggerButtonposition");
+        myButtonp.addEventListener("click", changePos);
+
+        var myButton = document.getElementById("triggerButtoncolor");
+        myButton.addEventListener("click", changeBackground);
+        changeBackground();
+        changePos();
+    </script>
+</body>
+</html>
