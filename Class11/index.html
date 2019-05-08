@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    #triggerButtonposition{
+        position: absolute;
+    }
+    #bgmenu{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+    }
+    #menu{
+        text-align: center;
+        
+        margin-top: 70px;
+        visibility: visible;
+    }
+    li{
+        list-style: none;
+        font-family: "avenir next";
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(255, 208, 0);;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 208, 0);
+        
+    }
+    html{
+        margin: 0px;
+    }
+    body{
+        margin: 0px;
+    }
+    
+</style>
+<body id="mainBody">
+       
+    <nav>
+        <div id="menu">
+        <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Products.html">Models</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                        
+        </ul>
+    </nav>
+    <button id="btm">
+            <img id="bgmenu" src="https://static.thenounproject.com/png/2476286-200.png" alt="menu">
+    </button>
+    <script>
+
+
+        let imgsft = function(){
+            var handle= false;
+            var image = document.getElementsById("bgmenu");
+            var menu = document.getElementsById("menu");
+            if(handle=false){
+                image.src="https://static.thenounproject.com/png/2474938-200.png";
+                handle=true;
+                menu.style.visibility="visible"
+            } else {
+                image.src="https://static.thenounproject.com/png/2476286-200.png";
+                handle=false;
+                menu.style.visibility="hidden"
+            }
+        }
+        var myButton = document.getElementById("btm");
+        myButton.addEventListener("click", imgsft);
+    </script>
+</body>
+</html>
