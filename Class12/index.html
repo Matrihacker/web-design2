@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <main>
+        <h1>Which car would you like to test:</h1>
+
+        <form action="" method="POST">
+            <label for="vegis">Select your vegitables</label>
+            <select name="vegitables" id="vegis">
+                <option value="vegi">Vegitables</option>
+                <option value="fruits">Fruits</option>
+            </select>
+
+            <label for="type">type</label>
+            <select name="type" id="type"></select>
+        </form>
+        <h1 id="textinside"></h1>
+    </main>
+
+
+    <script>
+        var vegitbs    = ["Broccoli", "Cabbage", "Spinach","Asparagus Sprouts"];
+        var fruits       = ["Apple", "Banana", "Orange", "Lime"];
+        var whatfuritieat= ["qwe", "123123", "asdasd", "qwqwwq"];
+        var whatvegiieat= ["Verygood", "3xgood", "hahhalook", "no"];
+
+        var fruitsDropdown = document.getElementById("vegis");
+        var typeDropdown = document.getElementById("type");
+        var say = document.getElementById("textinside");
+        fruitsDropdown.addEventListener("change", function(){
+            console.log(this);
+            typeDropdown.innerHTML = "";
+            
+            if(this.value === "vegi"){
+                for(var i = 0; i < vegitbs.length; i++){
+                    typeDropdown.innerHTML += '<option value="' + i + '">' + vegitbs[i] + '</option>';
+                }  
+                
+            } else if(this.value === 'fruits'){
+                for(var i = 0; i < fruits.length; i++){
+                    typeDropdown.innerHTML += '<option value="' + i + '">' + fruits[i] + '</option>';
+                }
+                
+            }
+            
+        });
+        typeDropdown.addEventListener("change", function(){
+            var o=typeDropdown.value;
+            if(fruitsDropdown.value="vegi"){
+                say.textContent=whatvegiieat[o];
+            } 
+            if(fruitsDropdown.value="fruits") {
+                say.textContent=whatfuritieat[o];
+            }
+
+        });
+        
+    </script>
+</body>
+</html>

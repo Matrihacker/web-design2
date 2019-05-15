@@ -61,26 +61,31 @@
         </ul>
     </nav>
     <button id="btm">
-            <img id="bgmenu" src="https://static.thenounproject.com/png/2476286-200.png" alt="menu">
+            
     </button>
+    <img id="bgmenu" src="https://static.thenounproject.com/png/2476286-200.png" alt="menu">
+
     <script>
 
-
+        
+        handle=false;
+        menu.style.visibility="hidden";
         let imgsft = function(){
-            var handle= false;
-            var image = document.getElementsById("bgmenu");
-            var menu = document.getElementsById("menu");
-            if(handle=false){
+            console.log(this);
+            
+            var image = document.getElementById("bgmenu");
+            var menu = document.getElementById("menu");
+            if(handle===false){
                 image.src="https://static.thenounproject.com/png/2474938-200.png";
-                handle=true;
+                handle= true;
                 menu.style.visibility="visible"
-            } else {
+            } else if(handle===true){
                 image.src="https://static.thenounproject.com/png/2476286-200.png";
                 handle=false;
                 menu.style.visibility="hidden"
             }
         }
-        var myButton = document.getElementById("btm");
+        var myButton = document.getElementById("bgmenu");
         myButton.addEventListener("click", imgsft);
     </script>
 </body>
