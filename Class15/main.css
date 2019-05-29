@@ -351,6 +351,9 @@ p{
     font-size: 36px;
     margin-left: 50px;
   }
+.sidenav a:last-child{
+      color: red;
+  }
   
   #main {
     transition: margin-left .5s;
