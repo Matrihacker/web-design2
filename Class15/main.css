@@ -20,7 +20,7 @@
 }
 
 html{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(206, 206, 206);
     background-size: cover;
     background-repeat: repeat;
     font-family: "Avenir Next";
@@ -295,8 +295,28 @@ p{
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
 }
-
-
+.imggallery{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.img1{
+    background-image: url("https://caspiannews.com/media/caspian_news/all_original_photos/1528831479_7183783_1528831390_5761793SFF-Foto-2018-001web2.jpg");
+}
+.img2{
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/BCC3BD1E-5DC0-4843-A841706AE575C694_source.jpg?w=590&h=800&39BBF62E-5F96-4C6A-A59590CCF416DA11");
+}
+.img3{
+    background-image: url("http://assets.worldwildlife.org/photos/15240/images/story_full_width/Medium_WW1106415.jpg?1520262857");
+}
+.sheader{
+    font-size:30px;
+    font-weight: bold;
+    margin: 20px;
+}
+.centerred{
+    text-align: center;
+}
 /*************SMALL SCREENS********************/
 @media (min-width: 450px){
     
