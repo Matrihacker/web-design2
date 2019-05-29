@@ -1,0 +1,471 @@
+@font-face {
+    src:url("font/AvenirNextLTPro-Bold.otf");
+    src:url("font/AvenirNextLTPro-It.otf");
+    src:url("font/AvenirNextLTPro-Regular.otf");
+}
+
+.logoimg{
+    height: 50px;
+    width: auto;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.logoimg img{
+    height: 50px;
+    width: auto;
+}
+
+html{
+    background-color: rgb(233, 233, 233);
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: "Avenir Next";
+    height: 100%;
+}
+
+
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+label{
+    font-size: 37px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    background-color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu{
+    display: block;
+
+}
+
+p{
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.navbar{
+    position: fixed;
+    top: -10px;
+    z-index: 6;
+
+}
+.navpad{
+    padding-bottom: 20px;
+}
+.navfix{
+    padding: 0px;
+}
+nav h1{
+    position: absolute;
+    font-size: 30px;
+    left: 30px;
+    top:0px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(208, 223, 0);
+
+    padding: 5px;
+    padding-right: 18px;
+    padding-left: 18px;
+    
+    
+}
+
+nav.navbar {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-bottom: 85px;
+}
+
+nav.navbar ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+nav.navbar li{
+    border-bottom: solid 1px rgb(0, 0, 0);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+nav.navbar a {
+    line-height: 36px;
+    text-decoration: none;
+    color:  rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.prtv{
+    position: relative;
+    text-align: center;
+}
+
+.indemdl{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
+}
+.indemdli{
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#colorful{
+    text-transform: uppercase;
+	background: linear-gradient(to bottom, rgb(255, 224, 166) 0%, #bbf5ff 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    line-height: 120px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+}
+#flat{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+div h1,h2,h3,h4,h5,p{
+    position: relative;
+    z-index: 5;
+}
+#headerfl{
+    margin-left: 30px;
+    font-size: 32px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.header{
+    margin-left: 30px;
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+	background: linear-gradient(to bottom, rgb(255, 218, 54) 0%, rgb(59, 232, 255)100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.headerk{
+    margin-left: 30px;
+    font-size: 45px;
+}
+#parafix{
+    margin-top: -30px;
+    line-height: 30px;
+}
+
+h3,h4{
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+.yellow {
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+.pcard{
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.541);
+    font-weight: bolder;
+    color: white;
+}
+.cards{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+}
+.price{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.htdjx{
+    padding-bottom: -50px;
+}
+
+.bgim{
+    background-image: url("https://mirpurifoundation.org/wp-content/uploads/2017/04/wildlife.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
+.bgim2{
+    background-image: url("http://www.conservationphotojournalism.com/uploads/2/6/9/2/26929804/mg-2718_orig.jpg");
+    background-size: cover;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.bgimk{
+    background-image: url("https://www.nbm.org/wp-content/uploads/2017/02/ym_nbm_making_room_111717-5670.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
+.indemdll{
+    color: white;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
+}
+
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+
+    
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+   
+    nav h1{
+        top:0px;
+    }
+    .header {
+        font-size: 40px;
+    }
+    #headerfl {
+        font-size: 40px;
+    }
+    
+    nav.navbar li{
+        display: inline-block;
+        margin-top: 10px;
+        border: none;
+    }
+    #flat{
+        float: left;
+        height: 100%;
+        width: auto;
+        margin: 10px;
+    }
+    label{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        background-color: white;
+        z-index: -1;
+        width: 100%;
+        margin-top: 5px;
+        padding-bottom: 15px;
+        color: rgb(208, 223, 0);
+    }
+    
+    nav.navbar {
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 60px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .navbar{
+        background-color: white;
+        
+    }
+    nav.navbar ul {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px;
+        margin-left: 30px;
+        margin-top: 7px;
+        text-align: right;
+        
+    }
+    nav.navbar a {
+        font-size: 22px;
+        line-height: 36px;
+        text-decoration: none;
+        color:  rgb(0, 0, 0);
+        font-weight: 600;
+        margin-right: 20px;
+        
+    }
+    
+    .cards{
+        font-size: 25px;
+        top: 10px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .htfx{
+        height:1050px;
+    }
+    .navfix{
+        padding: 30px;
+    }
+    #colorful{
+        font-size: 200px;
+        line-height: 200px;
+    }
+    .bgim{
+
+        padding-bottom: 800px;
+    }
+    
+    #colorful{
+        font-size: 120px;
+        line-height: 140px;
+    }
+}
+
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .header {
+        font-size: 30px;
+    }
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .hfx1{
+        margin-bottom: 150px;
+    }
+    .htfxx{
+        height:500px;
+    }
+    #colorful{
+        font-size: 190px;
+        line-height: 180px;
+    }
+}
