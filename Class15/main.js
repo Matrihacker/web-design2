@@ -1,10 +1,11 @@
 function openNav() {
+
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("burger").style.display = "block";
+    document.getElementById("burger").style.display = "none";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("burger").style.display = "none";
+    document.getElementById("burger").style.display = "block";
 
   }
