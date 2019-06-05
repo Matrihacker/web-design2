@@ -1,21 +1,754 @@
+@font-face {
+    src:url("font/AvenirNextLTPro-Bold.otf");
+    src:url("font/AvenirNextLTPro-It.otf");
+    src:url("font/AvenirNextLTPro-Regular.otf");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:900|Poppins:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Fugaz+One&display=swap');
+
 .logoimg{
-    height: 50px;
     width: auto;
     position: fixed;
-    left: 30px;
-    top: 20px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
+    left: 3px;
+    top: 3px;
+
+
 }
 
 .logoimg img{
-    height: 50px;
+    height: 55px;
     width: auto;
 }
+.headerbar{
+    font-family: 'Muli', sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+html{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: "Avenir Next";
+    height: 100%;
+}
+
+
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+label{
+    font-size: 35px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu{
+    display: block;
+
+}
+
+p{
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.navbar{
+    position: fixed;
+    z-index: 6;
+    background-color: white;
+}
+
+
+nav.navbar {
+    width: 100%;
+    height: 57px;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.473);
+}
+
+nav.navbar ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+nav.navbar li{
+    border-bottom: solid 1px rgb(0, 0, 0);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+nav.navbar a {
+    line-height: 36px;
+    text-decoration: none;
+    color:  rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.prtv{
+    position: relative;
+    text-align: center;
+}
+
+.indemdl{
+    
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.233);
+}
+
+.indemdli{
+    position: absolute;
+    text-align: left;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#colorful{
+    font-weight: 650;
+	/*background: linear-gradient(to bottom, rgb(255, 224, 166) 0%, #bbf5ff 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color: white;
+    text-shadow:0px 6px 60px rgba(0, 0, 0, 0.377);
+    font-size: 80px;
+    line-height: 80px;
+    top: 200px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+}
+#flat{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+#imgs{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: auto;
+    margin: 0px;
+}
+
+div h1,h2,h3,h4,h5,p{
+    position: relative;
+    z-index: 5;
+}
+#headerfl{
+    margin-left: 30px;
+    font-size: 32px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.header{
+    margin-left: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #a8a8a8;
+}
+.headerk{
+    margin-left: 30px;
+    font-size: 45px;
+}
+
+#parafix{
+    font-weight: 700;
+    color: #363636;
+}
+#parafixms{
+    font-weight: 900;
+    font-size: 28px;
+    color: #464646;
+}
+
+h3,h4{
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.yellow {
+    color: rgb(0, 0, 0);
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+.pcard{
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.541);
+    font-weight: bolder;
+    color: white;
+}
+.cards{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+}
+.price{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.htdjx{
+    padding-bottom: -50px;
+}
+
+.bgim{
+    background-image: url("images/cvr.jpg");
+    background-size: cover;
+    padding-bottom: 500px;
+}
+.bgim1{
+    background-image: url("images/bird1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 100px 40px;
+}
+.bgim2{
+    background-image: url("images/bird2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 0px 40px;
+}
+.indemdll{
+    color: white;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.274);
+}
+.imggallery{
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.img1{
+    background-image: url("https://caspiannews.com/media/caspian_news/all_original_photos/1528831479_7183783_1528831390_5761793SFF-Foto-2018-001web2.jpg");
+}
+.img2{
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/BCC3BD1E-5DC0-4843-A841706AE575C694_source.jpg?w=590&h=800&39BBF62E-5F96-4C6A-A59590CCF416DA11");
+}
+.img3{
+    background-image: url("http://assets.worldwildlife.org/photos/15240/images/story_full_width/Medium_WW1106415.jpg?1520262857");
+}
+.sheader{
+    font-size:30px;
+    font-weight: bold;
+    margin: 20px;
+}
+.containerbox{
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    /*box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.021)*/
+}
+.centerred{
+    padding: 4px;
+    text-align: left;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(255, 255, 255); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  #burger{
+      display: block;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a:last-child{
+      color: red;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  .box{
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.473);
+  }
+  .header {
+    font-size: 25px;
+  }
+  #parafix{
+    font-size: 18px;
+  }
+  
+/**********for img gallery ***********/
+.ctrow{
+    width: 100%;
+
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 94%;
+    margin-left: 30px;
+  }
+
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 20px;
+  }
+  
+  .column img {
+    margin-top: 50px;
+    vertical-align: middle;
+    width: 100%;
+  }
+ 
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      padding: 0px;
+    }
+    .column img {
+        margin-top: 10px;
+      }
+      
+    .row{
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+  }
+
+/* about special */
+#marginfix{
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
+.abtfix{
+    padding-top: 100px;
+}
+.bgim3{
+    background-image: url("images/elephant.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 100px 50px;
+}
+.bgim4{
+    background-image: url("images/bear.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 200px 0px;
+}
+.bgim5{
+    background-image: url("images/Lion.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 200px 0px;
+}
+@media screen and (min-width: 768px) {
+    .abtfix{
+        padding-top: 142px;
+    }
+  }
+/* Blog */
+.centerblog:first-child{
+    margin-bottom: 0px;
+}
+.containerbox2{
+    position: relative;
+    width: 90%;
+
+    box-shadow: 0px 3px 21px rgba(0, 0, 0, 0.24);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border: 1px solid;
+    margin: 30px;
+}
+.centerblog{
+    
+
+}
+.abtfix2{
+    padding-top: 90px;
+}
+#parafix{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 32px;
+}
+@media screen and (min-width: 768px) {
+    .abtfix2{
+        padding-top: 130px;
+    }
+    .containerbox2{
+        width: 85%;
+        
+    }
+    #parafix{
+        font-weight: 600;
+    }
+  }
+/*************Donation********************/
+#thankyou{
+    display: none;
+}
+.bgim6{
+    background-image: url("images/bird11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-position: 0px 0px;
+}
+.containerbox3{
+    position: relative;
+    width: 90%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+
+  select{
+    border-radius: 4px;
+    background-color: #ececec;
+    height: 100%;
+  }
+  .submitd {
+    background-color: rgb(55, 180, 51);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+  }
+  
+  .containerx {
+    background-color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+  .rowx{
+      margin-top: 10px;
+  }
+  .rowx:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  textarea{
+      font-family: "Avenir Next";
+      font-weight: 300;
+  }
+  @media screen and (min-width: 768px) {
+    .submitd {
+      width: 120px;
+      margin-top: 0;
+    }
+    .row50{
+        width: 49.66%;
+        display: inline-block;
+    }
+
+  }
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+   
+    
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+   
+    nav h1{
+        top:0px;
+    }
+    .header {
+        font-size: 30px;
+    }
+    #parafix{
+        font-size: 20px;
+    }
+    #headerfl {
+        font-size: 40px;
+    }
+
+    #flat{
+        float: left;
+        height: 100%;
+        width: auto;
+        margin: 10px;
+    }
+    
+    .menu{
+        display: block;
+        position: absolute;
+        background-color: white;
+        z-index: -1;
+        width: 100%;
+        padding-bottom: 15px;
+        color: rgb(208, 223, 0);
+    }
+    
+
+    .cards{
+        font-size: 25px;
+        top: 10px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .htfx{
+        height:1050px;
+    }
+    .navfix{
+        padding: 30px;
+    }
+    
+    .bgim{
+
+        padding-bottom: 800px;
+    }
+    
+    #colorful{
+        font-size: 120px;
+        line-height: 140px;
+    }
+    
+    .sidenav {
+        overflow-x: visible; 
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        width: auto;
+        background-color: transparent;
+        text-align: right;
+        padding-top: 0px;
+      }
+    .navbar{
+        height: 60px;
+        background-color: white;
+        position: absolute;
+    }
+    nav.navbar{
+        width: 85%;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sidenav :first-child{
+        display: none;
+    }
+    #burger{
+        display: none;
+    }
+    .sidenav a {
+        
+        display: inline-block;
+        transition: 0.3s;
+      }
+
+    .logoimg{
+        background-color: transparent;
+        z-index: 3;
+
+    }
+    #colorful{
+        top: 100px;
+        font-size: 150px;
+        line-height: 180px;
+    }
+
+}
+
+
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px){
     .header {
-        font-size: 30px;
+        font-size: 33px;
+    }
+    #parafix{
+        font-size: 24px;
     }
     .large-width-25 {
         width: 25%;
@@ -41,5 +774,17 @@
     .htfxx{
         height:500px;
     }
-    
+    #colorful{
+        top: 160px;
+        font-size: 150px;
+        line-height: 180px;
+    }
+    .bgim1{
+        
+        background-position: auto -400px;
+    }
+    .bgim2{
+        
+        background-position: auto -900px;
+    }
 }
