@@ -458,6 +458,27 @@ p{
     }
   }
 /* Blog */
+.big1{
+    background-image: url("https://i.pinimg.com/originals/75/3b/d7/753bd78558a661557e13243cec707ab3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 40px;
+    }
+.big2{
+    background-image: url("https://s3.amazonaws.com/images.ecwid.com/images/11646612/517885084.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 40px;
+    }
+.big3{
+    background-image: url("http://r.ddmcdn.com/s_f/o_1/w_1024/h_682/APL/uploads/2014/08/wild-animal-safari-zebra-5371037.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 40px;
+    }
 .centerblog:first-child{
     margin-bottom: 0px;
 }
@@ -466,7 +487,6 @@ p{
     width: 90%;
 
     box-shadow: 0px 3px 21px rgba(0, 0, 0, 0.24);
-    padding-top: 30px;
     padding-bottom: 30px;
 
     left: 50%;
@@ -509,8 +529,19 @@ hr {
 
         font-weight: 500;
     }
+    .big1, .big2, .big3{
+        height: 500px;
+    }
   }
 /*************Donation********************/
+
+#parafixmsx{
+    font-weight: 900;
+    font-size: 27px;
+    color: #464646;
+    display: none;
+}
+
 #thankyou{
     display: none;
 }

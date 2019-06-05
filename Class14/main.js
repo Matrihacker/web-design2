@@ -14,8 +14,9 @@ function closeNav() {
   function thankyou(){
     document.getElementById("disapr").style.display="none";
     document.getElementById("p_header").style.display="none";
-    document.getElementById("parafixms").text="Your donation makes you a member of WWF. A monthly gift of $100+ makes you a Partner in Conservation";
-    document.getElementById("thankyou").style.display="inline";
+    document.getElementById("parafixms").style.display="none";
+    document.getElementById("parafixmsx").style.display="block";
+    document.getElementById("thankyou").style.display="block";
 }
 
 
@@ -23,4 +24,3 @@ function afterLoad(){
     var myButton = document.getElementById("btn_submit");
     myButton.onclick=thankyou;
 }
-
