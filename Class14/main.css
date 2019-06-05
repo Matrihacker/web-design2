@@ -592,6 +592,8 @@ input[type=text], select, textarea{
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    box-shadow: 0px 3px 21px rgba(0, 0, 0, 0.24);
+
   }
   
   .col-25 {
