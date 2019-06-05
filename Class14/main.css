@@ -373,7 +373,9 @@ p{
   #parafix{
     font-size: 18px;
   }
-  
+  .margin2{
+      margin-bottom: 50px;
+  }
 /**********for img gallery ***********/
 .ctrow{
     width: 100%;
@@ -503,7 +505,7 @@ hr {
         
     }
     #parafix{
-        font-weight: 600;
+        font-weight: 500;
     }
   }
 /*************Donation********************/
@@ -738,7 +740,9 @@ input[type=text], select, textarea{
         font-size: 150px;
         line-height: 180px;
     }
-
+    .margin2{
+        margin-bottom: -20px;
+    }
 }
 
 
