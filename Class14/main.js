@@ -13,13 +13,14 @@ function closeNav() {
 
   function thankyou(){
     document.getElementById("disapr").style.display="none";
-    document.getElementByClassName("header").style.display="none";
-    document.getElementById("parafixms").style.display="none";
+    document.getElementById("p_header").style.display="none";
+    document.getElementById("parafixms").text="Your donation makes you a member of WWF. A monthly gift of $100+ makes you a Partner in Conservation";
     document.getElementById("thankyou").style.display="inline";
 }
 
-  var myButton = document.getElementsByClassName("submitd");
-  
-  myButton.addEventListener ("click", thankyou);
 
-  
+function afterLoad(){
+    var myButton = document.getElementById("btn_submit");
+    myButton.onclick=thankyou;
+}
+
