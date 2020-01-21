@@ -11,7 +11,7 @@ function closeNav() {
 
   }
 
-  function thankyou(){
+function thankyou(){
     document.getElementById("disapr").style.display="none";
     document.getElementById("p_header").style.display="none";
     document.getElementById("parafixms").style.display="none";
